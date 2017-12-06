@@ -5,6 +5,8 @@ import javax.xml.transform.*;
 import org.w3c.dom.*;
 
 import javax.xml.parsers.*;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
 import java.io.*;
 
 public class PreferencesManager {
@@ -18,6 +20,15 @@ public class PreferencesManager {
         DocumentBuilder db = DocumentBuilderFactory.newInstance().newDocumentBuilder();
         XML_DOCUMENT = db.parse(XML_FILE);
 
+    }
+
+    private void writeXml() {
+        try {
+            Transformer transformer = TransformerFactory.newInstance().newTransformer();
+            transformer.transform(new DOMSource(XML_DOCUMENT), new StreamResult(XML_FILE));
+        } catch (TransformerException e) {
+            e.printStackTrace(System.out);
+        }
     }
 
     public static PreferencesManager getInstance() throws Exception {
