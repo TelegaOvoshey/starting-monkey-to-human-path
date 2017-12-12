@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE restaurant SYSTEM "restaurant.dtd">
+<restaurant>
+    <date day="01" month = "01" year="2016">
+        <order>
+            <officiant secondname="Sidorov"/>
+            <item name="Cake slice" cost="2"/>
+            <item name="Black Tea" cost="2"/>
+            <item name="Wine" cost="3"/>
+            <totalcost>10</totalcost>
+        </order>
+    </date>
+    <date day="02" month="01" year="2016">
+        <order>
+            <officiant secondname="Ivanov"/>
+            <item name="Green Tea" cost="2"/>
+            <item name="Donut" cost="1"/>
+        </order>
+        <order>
+            <officiant secondname="Ivanov"/>
+            <item name="Donut" cost="1"/>
+            <item name="Black Tea" cost="2"/>
+        </order>
+        <order>
+            <officiant secondname="Petrov"/>
+            <item name="Sandwich" cost="5"/>
+            <item name="Donut" cost="1"/>
+            <item name="Green Tea" cost="2"/>
+            <totalcost>8</totalcost>
+        </order>
+    </date>
+</restaurant>
