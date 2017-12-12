@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE restaurant SYSTEM "restaurant.dtd">
+<restaurant>
+    <date day="01" month = "01">
+        <order>
+            <officiant secondname="Stevenson"/>
+            <item name="Cake slice" cost="2"/>
+            <item name="Black Tea"/>
+            <item name="Wine" cost="3"/>
+        </order>
+    </date>
+</restaurant>

@@ -1,14 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0">
-
-</AnchorPane>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><restaurant>
+    <date day="15" month="9" year="2000">
+        <order>
+        <officiant firstname="Ivan" secondname="Ivanov"/>
+        <item cost="200" name="Borsch"/>
+        <item cost="150" name="Vodka"/>
+        <item cost="3" name="Bred"/>
+        <totalcost>353</totalcost></order>
+    </date>
+</restaurant>
